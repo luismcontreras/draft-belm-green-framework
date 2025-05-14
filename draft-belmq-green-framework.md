@@ -91,7 +91,7 @@ informative:
 
 --- abstract
 
-Recognizing the urgent need for energy efficiency, this document specifies a management framework focused on devices and device components within, or connected to, interconnected systems. The framework aims to optimize energy usage and ensure interoperability across diverse systems. Leveraging data from existing use cases, it delivers actionable metrics to support effective energy management and informed decision-making. Furthermore, the framework proposes mechanisms for representing and organizing timestamped telemetry data using YANG models and metadata, enabling transparent and reliable monitoring. This structured approach facilitates improved energy efficiency through consistent energy management practices.
+Recognizing the urgent need for energy efficiency, this document specifies a management framework focused on devices and device components within, or connected to, interconnected systems. The framework aims to enable energy usage optimization and ensure interoperability across diverse systems. Leveraging data from existing use cases, it delivers actionable metrics to support effective energy management and informed decision-making. Furthermore, the framework proposes mechanisms for representing and organizing timestamped telemetry data using YANG models and metadata, enabling transparent and reliable monitoring. This structured approach facilitates improved energy efficiency through consistent energy management practices.
 --- middle
 
 # TO DO
@@ -106,7 +106,7 @@ Recognizing the urgent need for energy efficiency, this document specifies a man
 
 # Introduction
 
-In reference to https://datatracker.ietf.org/doc/draft-stephan-green-use-cases/, analyzing use cases such as the "Incremental Application of the GREEN Framework" and "Consideration of other domains for obtention of end-to-end metrics", it reveals the critical need for a structured approach to transitioning network devices towards energy-efficient operations. The framework is essential for:
+In reference to {{!I-D.stephan-green-use-cases}}, analyzing use cases such as the "Incremental Application of the GREEN Framework" and "Consideration of other domains for obtention of end-to-end metrics", it reveals the critical need for a structured approach to transitioning network devices towards energy-efficient operations. The framework is essential for:
 
 * Standardization: Ensuring consistent practices across different devices and network segments to facilitate interoperability.
 * Efficient Energy Management: Providing guidelines to identify inefficiencies and implement improvements.
@@ -119,7 +119,7 @@ In reference to https://datatracker.ietf.org/doc/draft-stephan-green-use-cases/,
 
    This document defines an Energy Management framework for devices
    within, or connected to, communication networks, for the use cases
-   described in https://datatracker.ietf.org/doc/draft-stephan-green-use-cases/.
+   described in {{!I-D.stephan-green-use-cases}}.
    The devices, or the components of these devices (such as line cards, fans, and
    disks), can then be monitored and controlled. Monitoring includes measuring
    power, energy, demand, and attributes of power.  Energy Control can
@@ -168,45 +168,45 @@ Energy Management System (EnMS)
          can be referred to as an ISO Energy Management System
          (ISO-EnMS).
 
-Device
+Device:
       A device is a piece of electrical or non-electrical equipment.
 
       Reference: Adapted from [IEEE100].
 
-Component
+Component:
       A component is a part of electrical or non-electrical equipment
       (device).
 
       Reference: Adapted from [TMN].
 
-Meter (Energy Meter)
+Meter (Energy Meter):
       A meter is a device intended to measure electrical energy by
       integrating power with respect to time.
 
       Reference: Adapted from [IEC60050].
 
-Power Inlet
+Power Inlet:
       A power inlet (or simply "inlet") is an interface at which a
       device or component receives energy from another device or
       component.
 
-Power Outlet
+Power Outlet:
       A power outlet (or simply "outlet") is an interface at which a
       device or component provides energy to another device or
       component.
 
-Power Interface
+Power Interface:
       A Power Interface is a power inlet, outlet, or both.
 
 
-Power State
+Power State:
       A Power State is a condition or mode of a device (or component)
       that broadly characterizes its capabilities, power, and
       responsiveness to input.
 
       Reference: Adapted from [IEEE1621].
 
-Power State Set
+Power State Set:
       A Power State Set is a collection of Power States that comprises a
       named or logical control grouping.
 
@@ -385,7 +385,7 @@ This document has no IANA actions.
 # Acknowledgments
 
 This framework takes into account concepts from the Energy MANagement (EMAN) Framework {{?RFC7326}}, authors by John Parello, Benoit Claise, Brad Schoening, and Juergen Quittek.
-
+The contribution of Luis M. Contreras to this document has been partially supported by the Smart Networks and Services Joint Undertaking (SNS JU) under the European Union's Horizon Europe research and innovation project Exigence (Grant Agreement no. 101139120).
 # References
 
 ## Normative References
